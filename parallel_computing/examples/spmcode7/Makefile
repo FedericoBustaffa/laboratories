@@ -1,0 +1,32 @@
+# 
+# FF_ROOT     points to the FastFlow root directory (i.e.
+#             the one containing the ff directory).
+ifndef FF_ROOT 
+FF_ROOT		= /home/federico/dev/cpp/spm/fastflow/
+endif
+
+CXX                = g++ -std=c++20
+OPTFLAGS	   = -O3 -DNDEBUG -ffast-math
+CXXFLAGS          += -Wall #-DNO_DEFAULT_MAPPING
+                           #-DBLOCKING_MODE -DFF_BOUNDED_BUFFER
+
+INCLUDES	   = -I. -I./include -I $(FF_ROOT)
+LIBS               = -pthread
+SOURCES            = $(wildcard *.cpp)
+TARGET             = $(SOURCES:.cpp=)
+
+.PHONY: all clean cleanall 
+
+%: %.cpp
+	$(CXX) $(INCLUDES) $(CXXFLAGS) $(OPTFLAGS) -o $@.out $< $(LIBS)
+
+all: $(TARGET)
+
+example-omp:example-omp.cpp
+	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@.out $< $(LIBS) -fopenmp
+
+clean: 
+	-rm -fr *.o *~
+
+cleanall: clean
+	-rm -fr *.out

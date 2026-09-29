@@ -1,0 +1,5 @@
+{
+  "name" : "Italia",
+  "population" : 60000000,
+  "regions" : [ "Toscana", "Lombardia", "Lazio", "Sicilia", "Veneto" ]
+}

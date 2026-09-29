@@ -1,0 +1,25 @@
+[ {
+  "name" : "Federico",
+  "surname" : "Bustaffa",
+  "age" : 23,
+  "city" : "Pisa",
+  "university" : "Informatica"
+}, {
+  "name" : "Elisabetta",
+  "surname" : "Rossi",
+  "age" : 23,
+  "city" : "Firenze",
+  "university" : "Fisica"
+}, {
+  "name" : "Margherita",
+  "surname" : "Aloisi",
+  "age" : 22,
+  "city" : "Catanzaro",
+  "university" : "Chimica"
+}, {
+  "name" : "Francesco",
+  "surname" : "Artuso",
+  "age" : 26,
+  "city" : "Reggio Calabria",
+  "university" : "Fisica"
+} ]

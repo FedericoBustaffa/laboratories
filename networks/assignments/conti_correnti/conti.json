@@ -1,0 +1,28 @@
+[ {
+  "correntista" : "Correntista 1",
+  "movimenti" : [ {
+    "data" : "Mon Dec 17 02:43:10 CET 204031866",
+    "causale" : "F24"
+  }, {
+    "data" : "Mon Mar 30 06:25:48 CET 201771664",
+    "causale" : "PAGOBANCOMAT"
+  } ]
+}, {
+  "correntista" : "Correntista 2",
+  "movimenti" : [ {
+    "data" : "Mon Oct 04 06:37:26 CEST 217838123",
+    "causale" : "PAGOBANCOMAT"
+  }, {
+    "data" : "Thu Jun 13 03:26:51 CET 51653524",
+    "causale" : "BONIFICO"
+  } ]
+}, {
+  "correntista" : "Correntista 3",
+  "movimenti" : [ {
+    "data" : "Thu Jan 21 08:02:31 CET 41570275",
+    "causale" : "ACCREDITO"
+  }, {
+    "data" : "Mon Jun 11 17:21:32 CET 223001541",
+    "causale" : "BOLLETTINO"
+  } ]
+} ]
