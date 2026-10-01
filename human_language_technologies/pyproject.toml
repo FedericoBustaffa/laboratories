@@ -12,6 +12,7 @@ dependencies = [
     "pyqt6>=6.11.0",
     "scikit-learn>=1.8.0",
     "scipy>=1.17.1",
+    "tiktokenizer>=0.1.1",
     "torch>=2.11.0",
     "torchvision>=0.26.0",
     "tqdm>=4.67.3",
