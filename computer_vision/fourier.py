@@ -42,8 +42,6 @@ if __name__ == "__main__":
     kernel_fft = np.fft.rfft(kernel)
     kernel_freqs = np.fft.rfftfreq(len(kernel))
 
-    print(kernel_fft, kernel_freqs)
-
     duration = 2
     sample_rate = 200
     time = np.arange(int(duration * sample_rate)) / sample_rate
